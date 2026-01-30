@@ -8,15 +8,16 @@
     <style>
         :root { --primary: #1a2a3a; --accent: #3498db; --bg: #ffffff; }
         body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #333; line-height: 1.7; margin: 0; padding: 0; }
-        nav { background: #fff; padding: 1.5rem; text-align: center; border-bottom: 1px solid #eee; }
+        nav { background: #fff; padding: 1.5rem; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
         nav a { margin: 0 20px; text-decoration: none; color: var(--primary); font-weight: 600; }
-        .container { max-width: 800px; margin: 3rem auto; padding: 0 1.5rem; }
-        h1 { font-family: 'Playfair Display', serif; color: var(--primary); font-size: 2.5rem; margin-bottom: 2rem; }
-        h2 { font-family: 'Playfair Display', serif; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-top: 3rem; }
+        .container { max-width: 850px; margin: 3rem auto; padding: 0 1.5rem; }
+        h1 { font-family: 'Playfair Display', serif; color: var(--primary); font-size: 2.8rem; margin-bottom: 2rem; }
+        h2 { font-family: 'Playfair Display', serif; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 0.5rem; margin-top: 3.5rem; }
         .pub-list { list-style: none; padding: 0; }
-        .pub-item { margin-bottom: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--accent); }
-        .pub-category { font-size: 0.8rem; text-transform: uppercase; color: #999; letter-spacing: 1px; font-weight: 600; }
-        .footer { text-align: center; padding: 4rem; color: #999; font-size: 0.9rem; }
+        .pub-item { margin-bottom: 1.8rem; padding-left: 1.2rem; border-left: 3px solid var(--accent); }
+        .pub-category { font-size: 0.8rem; text-transform: uppercase; color: #999; letter-spacing: 1px; font-weight: 600; display: block; margin-bottom: 0.3rem; }
+        .award { color: #e67e22; font-size: 0.9rem; font-weight: 600; display: block; margin-top: 0.3rem; }
+        .footer { text-align: center; padding: 4rem; color: #999; font-size: 0.9rem; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
@@ -30,40 +31,66 @@
     <h1>Publications & Lectures</h1>
 
     <section>
-        <h2>Dissertation</h2>
+        <h2>Books</h2>
         <div class="pub-item">
-            "A New Orient: German-Jewish Oriental Studies in Palestine/Israel, 1926–1963." <em>PhD Dissertation, The Hebrew University of Jerusalem</em>, 2021.
+            <strong><em>A New Orient: From German Scholarship to Middle Eastern Studies in Israel</em></strong>. Brandeis University Press, 2024.
+            <span class="award">🏆 Recipient of the Jordan Schnitzer First Book Publication Award (AJS)</span>
+        </div>
+        <div class="pub-item">
+            <strong><em>מזרח חדש: מאוריינטליזם גרמני למזרחנות ישראלית</em></strong>. הוצאת מאגנס, 2024.
         </div>
     </section>
 
     <section>
+        <h2>Peer-Reviewed Articles</h2>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <span class="pub-category">Journal Article (2025)</span>
+                "Whose Jewish History is it Anyway? Ideology and Practice in the Study of the Jewish Communities from the Islamic World in Nascent Israel," <em>Journal of Modern Jewish Studies</em>.
+            </li>
+            <li class="pub-item">
+                <span class="pub-category">Book Chapter (2025)</span>
+                "'Send my regards to those working on the al-Balādhurī manuscript': The Study of Arabic and Islam in Interwar Jerusalem as Intellectual Common Ground," in <em>Colonial Vocabularies: Teaching and Learning Arabic in Europe</em>, eds. R. Mairs et al. (Amsterdam University Press).
+            </li>
+            <li class="pub-item">
+                <span class="pub-category">Journal Article (2024)</span>
+                "Visualizing Farewell: A Jewish Soldier's Return to Postwar Germany through Private Photography," <em>Jewish Culture and History</em> 25, no. 2, 233–54.
+            </li>
+            <li class="pub-item">
+                <span class="pub-category">Book Chapter (2024)</span>
+                "Rediscovering the Goldziher Legacy in Jerusalem: Religion, Language, and History in the Making of a Hebrew University," in <em>Building Bridges: Ignaz Goldziher and His Correspondents</em> (Brill), 139–64.
+            </li>
+        </ul>
+    </section>
+
+    <section>
         <h2>Selected Lectures & Presentations</h2>
-        <div class="pub-list">
-            <div class="pub-item">
-                <span class="pub-category">Oxford (2024)</span><br>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <span class="pub-category">Oxford (2024)</span>
                 "The Borders of the Orient and Boundaries of Oriental Studies: Martin Plessner and the Transplantation of German-Jewish Orientalism."
-            </div>
-            <div class="pub-item">
-                <span class="pub-category">Paris (2018)</span><br>
-                "The circulation of linguistic and philological knowledge between Germany and the world."
-            </div>
-            <div class="pub-item">
-                <span class="pub-category">Lisbon (2015)</span><br>
+            </li>
+            <li class="pub-item">
+                <span class="pub-category">Jerusalem (2016)</span>
+                "Cataloguing the Martin Plessner Collection(s): A Researcher’s Point of View," <em>Gentner Symposium</em>.
+            </li>
+            <li class="pub-item">
+                <span class="pub-category">Lisbon (2015)</span>
                 "Transferring Orientalism to Palestine and Israel - the case of Martin Plessner, 1933-1973."
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
 
     <section>
         <h2>Work in Progress</h2>
         <div class="pub-item">
-            A study on the <strong>Palestine Folk Museum</strong> and the institutional history of folklore in the Mandate period.
+            A comprehensive study on the <strong>Palestine Folk Museum</strong> and the institutional history of folklore in Mandate Palestine.
         </div>
     </section>
 </div>
 
 <footer class="footer">
-    &copy; 2026 Dr. Amit Levy.
+    &copy; 2026 Dr. Amit Levy. All Rights Reserved.
 </footer>
 
 </body>
